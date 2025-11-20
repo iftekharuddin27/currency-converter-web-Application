@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #08203e, #557c93);
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    width: 400px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.headline h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.txt p, .box1 p, .box2 p {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.box1, .box2 {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.box1 img, .box2 img {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.fa-arrow-right-arrow-left {
+    display: block;
+    margin-left: 9rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.container > p {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.btn {
+    text-align: center;
+}
+
+#convert-btn {
+    background: #fff;
+    color: #08203e;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#convert-btn:hover {
+    background: #08203e;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.result {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+#result-text {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+select option {
+    background: #08203e;
+    color: #fff;
+}
+
+@media (max-width: 450px) {
+    .container {
+        width: 95%;
+        margin: 0 1rem;
+    }
+}

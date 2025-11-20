@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="headline">
+            <h1>Currency Converter</h1>
+        </div>
+    <div class="txt">
+        <p>Enter Amount</p>
+        <input type="number" id="amount" placeholder="Amount">
+    </div>    
+    <div class="box1">
+        <p>From</p>
+        <img src="https://flagsapi.com/US/flat/64.png" alt="US Flag">
+        <select id="from-currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="INR">INR</option>
+            <option value="BDT">BDT</option>
+        </select>
+    </div>
+
+    <div class="tag">
+    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+    </div>
+
+    <div class="box2">
+        <p>To</p>
+        <img src="https://flagsapi.com/BD/flat/64.png" alt="BD Flag">
+        <select id="to-currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="INR">INR</option>
+            <option value="BDT" selected>BDT</option>
+        </select>
+    </div>
+    <p>1 USD = 123 BDT</p>
+    <div class="btn">
+        <button id="convert-btn">Convert</button>
+    </div>
+    <div class="result">
+        <h2 id="result-text">Converted Amount: </h2>
+    </div>
+</body>
+<script src="app.js"></script>
+<script src="contrys.js"></script>
+</html>
